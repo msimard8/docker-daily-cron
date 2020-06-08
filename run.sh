@@ -5,5 +5,5 @@ echo "System path is $PATH at $timestamp"
 #!/bin/bash
 
 curl -sS https://epg.best/e22b-nuxttv.xml.gz -o /downloads/tv.xml.gz
-gunzip /downloads/tv.xml.gz > /downloads/tv.xml
+gunzip -f /downloads/tv.xml.gz > /downloads/tv.xml
 rm /downloads/tv.xml.gz
